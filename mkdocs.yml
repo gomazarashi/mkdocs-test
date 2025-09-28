@@ -1,1 +1,21 @@
-site_name: My Docs
+site_name: mkdocs-test
+site_url: https://gomazarashi.github.io/mkdocs-test/
+repo_url: https://github.com/gomazarashi/mkdocs-test
+theme:
+  name: material
+  language: ja
+nav:
+  - Home: index.md
+  - About: about.md
+plugins:
+  - search
+  - git-revision-date-localized:
+      locale: ja
+markdown_extensions:
+  - admonition
+  - toc:
+      permalink: true
+  - tables
+  - footnotes
+  - pymdownx.highlight
+  - pymdownx.superfences
